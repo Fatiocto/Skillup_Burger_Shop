@@ -1,0 +1,28 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+import '../../styles/banner.scss';
+
+
+const Banner = () => {
+    return (
+        <div className='banner'>
+            <div className="banner_content">
+            <h1>BURGER SHOP</h1>
+            <h5>Prenez le temps de vous offrir un savoureux burger</h5>
+            <button
+            className="btn"
+            style={{ backgroundColor: "#9C003C", color: "white" }}
+        >
+          <Link to="/menu" style={{textDecoration: "none", color: 'inherit'}}> Consultez le Menu </Link>
+            </button>
+            </div>
+
+        </div>
+    );
+};
+
+export default Banner;
+
+
+
+
